@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<body>
+    <input type="text" id="emailInput" placeholder="Enter your email">
+    <button id="loginButton">Login</button>
+    
+    <script>
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        document.getElementById('loginButton').addEventListener('click', function() {
+            var email = document.getElementById('emailInput').value;
+
+            if (isValidEmail(email)) {
+                // Store email in local storage
+                localStorage.setItem('userEmail', email);
+                alert('Login successful!');
+            } else {
+                alert('Invalid email format!');
+            }
+        });
+
+        window.onload = function() {
+            var storedEmail = localStorage.getItem('userEmail');
+            if (storedEmail) {
+                document.getElementById('emailInput').value = storedEmail;
+            }
+        };
+    </script>
+</body>
+</html>
