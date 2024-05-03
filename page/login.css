@@ -1,0 +1,30 @@
+.head{
+    text-align: center;
+     margin-top: 100px;
+     font-weight: bold;
+
+}
+.put-email{
+    margin-left: 37%;
+    font-size: 20px;
+}
+#floatingInput{
+    font-size: 15px;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 35%;
+    
+}
+.button-login{
+    margin-top: 20px;
+    
+}
+
+#btnbtn-primary{
+width: 42%;
+margin-left: 29%; 
+background-color: #4C7DFB;
+height: 60px;
+border-radius: 10px;
+}

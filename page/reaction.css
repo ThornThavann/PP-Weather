@@ -1,43 +1,50 @@
-/* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+.button-home{
+justify-content: space-around;
+display: flex;
+padding: 50px;
+height: 50px;
+
 }
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(45deg, #ffd195, #ffb283);
+.button-home button{
+  width: 150px;
+  font-size: 15px;
+  border-radius: 10px;
 }
-.rating-box {
-  position: relative;
-  background: #fff;
-  padding: 25px 50px 35px;
-  border-radius: 25px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-}
-.rating-box header {
-  font-size: 22px;
-  color: #dadada;
-  font-weight: 500;
-  margin-bottom: 20px;
+h2{
   text-align: center;
 }
-.rating-box .stars {
-  display: flex;
-  align-items: center;
-  gap: 25px;
+.reaction{
+  margin-left: 23%;
 }
-.stars i {
-  color: #e6e6e6;
-  font-size: 35px;
-  cursor: pointer;
-  transition: color 0.2s ease;
+input {
+  height: 40px;
+  width: 1000px;
+  border-radius: 5px;
 }
-.stars i.active {
-  color: #ff9c1a;
+textarea{
+  width: 1000px;
+  border-radius: 5px;
+}
+#submit{
+  margin-left: 61% ;
+  margin-top: 30px;
+  height: 50px;
+  width: 150px;
+  align-self: center;
+  border-radius: 10px;
+  background-color: #4C7DFB;
+}
+.reaction-comment{
+  width: 1000px;
+  height: 200px;
+border: 2px solid rgb(196, 194, 194);
+/* color: black; */
+/* background-color: black; */
+}
+.comment{
+  width: 90%;
+  margin-left: 20px;
+}
+.email-user{
+  font-weight: bold;
 }

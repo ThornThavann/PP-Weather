@@ -1,7 +1,7 @@
-function checkEmail(email) {
-    return email.includes('@');
-}
-document.getElementById('btn btn-primary').addEventListener('click', function() {
+
+import checkEmail from "../js/isEmailValid.js";
+
+document.getElementById('btnbtn-primary').addEventListener('click', function() {
     var email = document.getElementById('floatingInput').value;
     if (checkEmail(email)) {
         // Store email in local storage
@@ -12,10 +12,6 @@ document.getElementById('btn btn-primary').addEventListener('click', function() 
         alert('Invalid email format!');
     }
 });
-// When the page loads, check if there's a stored email and display it in the input field
-window.onload = function() {
-    var storedEmail = localStorage.getItem('userEmail');
-    if (storedEmail) {
-        document.getElementById('floatingInput').value = storedEmail;
-    }
-};
+// store in localStorage and delete
+localStorage.getItem('userEmail');
+localStorage.removeItem("userEmail");

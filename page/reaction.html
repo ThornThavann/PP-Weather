@@ -13,26 +13,55 @@
   </head>
   <body>
     <div class="container">
-
-        <label for="floatingTextarea">Comments</label>
-        <div class="form-floating">
-            
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            
-          </div>
-
-
-
-    <div class="rating-box">
-      <header>How was your experience?</header>
-      <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
+      <div class="button-home">
+        <button>
+          Back
+        </button>
+        <button style="background-color: #F86262;">
+          Log out
+        </button>
+      </div>
+      <h2>Phnom Penh Weather  Website - People Reaction</h2>
+      <div class="reaction">
+      <div class="paragraph">
+        <p style="font-weight: bold;">Share Your Reaction</p>
+        <p>Rate (1-5)</p>
+      </div>
+      <div class="rating" >
+        <input type="number" id="rating" min="1" max="5" placeholder="1-5"/>
+      </div>
+      <p id="comment">Comments</p>
+      <div class="form-floating">
+     
+        <textarea class="form-control" placeholder="comment" id="floatingTextarea2" style="height: 100px"></textarea>
+        <!-- <label for="floatingTextarea2">Comments</label> -->
+      </div>
+      <button id="submit">submit</button>
+      <div class="paragraph1">
+        <h3>People Reaction About Today’s Weather</h3>
+      </div>
+      <div class="reaction-comment">
+        <div class="comment">
+        <div class="email-user">
+          <p>sopheak.men@pse.ngo</p>
+        </div>
+        <div class="paragraph-comment">
+          <p>Today, the weather is very hot. I need to drink a lot of water to handle this situation. I will tell my classmate to drink much water
+            as well. How about your feeling everyone?</p>
+        </div>
+        <div class="stars" id="star-display">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+      </div>
       </div>
     </div>
+
+
+
 
 
  
