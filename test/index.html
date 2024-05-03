@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Validation</title>
-</head>
-<body>
-    <input type="text" id="emailInput" placeholder="Enter your email">
-    <button id="loginButton">Login</button>
-    
-    <script>
-        function isValidEmail(email) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-pUA-Compatible" content="ie=edge" />
+    <title>Star Rating</title>
+    <link rel="stylesheet" href="index.css" />
 
-        document.getElementById('loginButton').addEventListener('click', function() {
-            var email = document.getElementById('emailInput').value;
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="reaction.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rating">
+        <input type="number" id="rating" min="1" max="5" />
+      </div>
 
-            if (isValidEmail(email)) {
-                // Store email in local storage
-                localStorage.setItem('userEmail', email);
-                alert('Login successful!');
-            } else {
-                alert('Invalid email format!');
-            }
-        });
+      <div class="form-floating">
+        <textarea
+          class="form-control"
+          placeholder="Leave a comment here"
+          id="comment-input"></textarea>
+        <button id="submit-btn">Submit</button>
+      </div>
+    </div>
 
-        window.onload = function() {
-            var storedEmail = localStorage.getItem('userEmail');
-            if (storedEmail) {
-                document.getElementById('emailInput').value = storedEmail;
-            }
-        };
-    </script>
-</body>
+    <div class="user-rating">
+      <p id="comment-display"></p>
+      <div class="stars" id="star-display">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
