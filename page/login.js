@@ -1,17 +1,32 @@
 
-import checkEmail from "../js/isEmailValid.js";
-
-document.getElementById('btnbtn-primary').addEventListener('click', function() {
-    var email = document.getElementById('floatingInput').value;
-    if (checkEmail(email)) {
-        // Store email in local storage
-        localStorage.setItem('userEmail', email);
-        alert('Login successful!');
-    } else {
-        // Prompt for valid email
-        alert('Invalid email format!');
+function login() {
+    var email = document.getElementById("email").value;
+  
+    if (email.trim() === "") {
+      alert("Please enter email.");
+      return;
     }
-});
-// store in localStorage and delete
-localStorage.getItem('userEmail');
-localStorage.removeItem("userEmail");
+  
+    let emailResult = checkEmail(email);
+  
+    if (emailResult) {
+      alert("Valid Email!");
+      saveEmailToLocalStorage(email);
+    } else {
+      alert("Please enter your email again ");
+    }
+  }
+  
+  function checkEmail(email) {
+    if (email.includes("@") && email.length >= 8) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  function saveEmailToLocalStorage(email) {
+      localStorage.setItem('loggedInEmail', email);
+      window.location.href = "http://127.0.0.1:5502/page/home.html";
+  }
+

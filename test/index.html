@@ -1,45 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-pUA-Compatible" content="ie=edge" />
-    <title>Star Rating</title>
-    <link rel="stylesheet" href="index.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Redirect to a Webpage</h2>
+<p>The location.href method redirects the user to a new webpage:</p>
+<button onclick="myFunction()">Redirect</button>
 
-    <!-- Fontawesome CDN Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <script src="reaction.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="rating">
-        <input type="number" id="rating" min="1" max="5" />
-      </div>
+<script>
+    
+    function myFunction() {
+          window.location.href = "http://127.0.0.1:5502/page/reaction.html";
+          }
 
-      <div class="form-floating">
-        <textarea
-          class="form-control"
-          placeholder="Leave a comment here"
-          id="comment-input"></textarea>
-        <button id="submit-btn">Submit</button>
-      </div>
-    </div>
 
-    <div class="user-rating">
-      <p id="comment-display"></p>
-      <div class="stars" id="star-display">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-      </div>
-    </div>
-
-    <script src="index.js"></script>
-  </body>
+    </script>
+</body>
 </html>
+
+
