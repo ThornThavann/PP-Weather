@@ -53,6 +53,7 @@ async function fet(){
         </div>
         <p>"${result.current.condition.text}"</p>
       </div>
+
       <div class="rigth">
         <h3>Conditions</h3>
         <div class="box-right">
@@ -165,5 +166,6 @@ async function fet(){
         }
         }
         fat();
+
 
 
