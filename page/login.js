@@ -12,10 +12,11 @@ function login() {
     if (emailResult) {
       alert("Valid Email!");
       saveEmailToLocalStorage(email);
+
     } else {
       alert("Please enter your email again ");
     }
-  }
+
   
   function checkEmail(email) {
     if (email.includes("@") && email.length >= 8) {
@@ -29,4 +30,5 @@ function login() {
       localStorage.setItem('loggedInEmail', email);
       window.location.href = "http://127.0.0.1:5502/page/home.html";
   }
+
 
