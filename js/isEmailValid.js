@@ -9,3 +9,6 @@ console.log(checkEmail("thavann@")); // true
 console.log(checkEmail("thavann@pse.ngo")); // true
 
 export default checkEmail;
+
+
+
