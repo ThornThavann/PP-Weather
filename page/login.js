@@ -1,7 +1,10 @@
 
-import checkEmail from "../js/isEmailValid.js";
+// import checkEmail from "../js/isEmailValid.js";
 
-document.getElementById('btnbtn-primary').addEventListener('click', function() {
+function checkEmail(email) {
+    return email.includes('@');
+}
+ document.getElementById('btnbtn-primary').addEventListener('click', function() {
     var email = document.getElementById('floatingInput').value;
     if (checkEmail(email)) {
         // Store email in local storage
@@ -15,3 +18,7 @@ document.getElementById('btnbtn-primary').addEventListener('click', function() {
 // store in localStorage and delete
 localStorage.getItem('userEmail');
 localStorage.removeItem("userEmail");
+ 
+let emails = JSON.parse(checkEmail);
+
+export default emails ;
