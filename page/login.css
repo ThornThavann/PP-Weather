@@ -5,25 +5,26 @@
 
 }
 .put-email{
-    margin-left: 37%;
+    margin-left: 35%;
     font-size: 20px;
 }
-#floatingInput{
+#email{
     font-size: 15px;
     width: 30%;
     height: 50px;
     border-radius: 10px;
     margin-left: 35%;
+    margin-top: 20px;
     
 }
-.button-login{
+#btnbtn-primary{
     margin-top: 20px;
     
 }
 
 #btnbtn-primary{
-width: 42%;
-margin-left: 29%; 
+width: 30%;
+margin-left: 35%; 
 background-color: #4C7DFB;
 height: 60px;
 border-radius: 10px;
