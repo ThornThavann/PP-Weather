@@ -5,6 +5,16 @@ padding: 50px;
 height: 50px;
 
 }
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust as needed */
+  border: 1px solid #ccc; /* Border for the comment container */
+  padding: 10px;
+  margin-bottom: 20px; /* Margin between comment boxes */
+  border-radius: 10px;
+}
+
 .button-home button{
   width: 150px;
   font-size: 15px;
@@ -24,6 +34,9 @@ input {
 textarea{
   width: 1000px;
   border-radius: 5px;
+}
+.fa-star.checked {
+  color: #F6C07F; /* Set the color of checked stars */
 }
 #submit{
   margin-left: 61% ;
