@@ -1,83 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-pUA-Compatible" content="ie=edge" />
-    <title>Star Rating</title>
-    <link rel="stylesheet" href="reaction.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Star Rating</title>
+  <link rel="stylesheet" href="reaction.css">
 
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-   <script src="reaction.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="button-home">
-        <button>
-          Back
-        </button>
-        <button style="background-color: #F86262;">
-          Log out
-        </button>
-      </div>
-      <h2>Phnom Penh Weather  Website - People Reaction</h2>
-      <div class="reaction">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="button-home">
+      <button onclick="goBack()">
+        Back
+      </button>
+      <button style="background-color: #F86262;" onclick="logout()">
+        Log out
+      </button>
+    </div>
+    <h2>Phnom Penh Weather Website - People Reaction</h2>
+    <div class="reaction">
       <div class="paragraph">
         <p style="font-weight: bold;">Share Your Reaction</p>
         <p>Rate (1-5)</p>
       </div>
-      <form class="rating" >
+      <form class="rating">
         <input type="number" id="rating" min="1" max="5" placeholder="1-5"/>
       </form>
-      <p id="comment">Comments</p>
+      <p id="commentLabel">Comments</p>
       <form class="form-floating">
-     
-        <textarea class="form-control" placeholder="comment" id="floatingTextarea2" style="height: 100px"></textarea>
-        <!-- <label for="floatingTextarea2">Comments</label> -->
+        <textarea class="form-control" placeholder="comment" id="comment" style="height: 100px"></textarea>
       </form>
-      <button type="submit" id="submit">submit</button>
+      <button type="button" id="submit" onclick="submitReaction()">Submit</button>
       <div class="paragraph1">
         <h3>People Reaction About Today’s Weather</h3>
       </div>
-      <div class="reaction-comment">
-        <div class="comment">
-        <div class="email-user">
-          <p>sopheak.men@pse.ngo</p>
-        </div>
-        <div class="paragraph-comment">
-          <p>Today, the weather is very hot. I need to drink a lot of water to handle this situation. I will tell my classmate to drink much water
-            as well. How about your feeling everyone?</p>
-        </div>
-        <div class="stars" id="star-display">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-        </div>
-      </div>
+      <div class="reaction-comment" id="reactionComment" style="margin-top: 50px;">
+        <!-- Existing comments will be displayed here -->
       </div>
     </div>
+  </div>
 
-
-
-
-
- 
-
-</div>
-
-    
-
-      <script src="reaction.js"></script>
-  </body>
+  <script src="reaction.js"></script>
+</body>
 </html>
-
-
-
-
-
-
-
 

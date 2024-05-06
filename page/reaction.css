@@ -37,9 +37,7 @@ textarea{
 .reaction-comment{
   width: 1000px;
   height: 200px;
-border: 2px solid rgb(196, 194, 194);
-/* color: black; */
-/* background-color: black; */
+
 }
 .comment{
   width: 90%;
