@@ -10,7 +10,7 @@ function login() {
     let emailResult = checkEmail(email);
   
     if (emailResult) {
-      alert("Valid Email!");
+      alert("successfull");
       saveEmailToLocalStorage(email);
 
     } else {

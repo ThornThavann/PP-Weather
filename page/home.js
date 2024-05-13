@@ -12,7 +12,7 @@ document.getElementById('shareReaction').addEventListener('click', navigateToRea
 
 function logout(){
   localStorage.removeItem("loggedInEmail");
-  window.location.href= "../page/login.html";
+  window.location.href= "../index.html";
 }
 document.getElementById('btn-danger').addEventListener('click', logout);
 function displayLoggedInUserEmail() {
