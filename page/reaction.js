@@ -6,6 +6,8 @@ function goBack() {
 // Function to log out (You can adjust it according to your need)
 function logout() {
     // Your logout logic here
+    localStorage.removeItem("loggedInEmail");
+    window.location.href = "../index.html";
     alert("Logged out successfully!");
 }
   
